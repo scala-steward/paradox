@@ -119,7 +119,7 @@ lazy val plugin = project
     crossScalaVersions := Seq("2.12.21", scala3), // sbt 1 uses 2.12, sbt 2 uses 3 — no 2.13
     sbtPlugin          := true,
     addSbtPlugin(Library.sbtWeb),
-    addSbtPlugin("com.github.sbt" % "sbt2-compat" % "0.1.0"),
+    addSbtPlugin("com.github.sbt" % "sbt2-compat" % "0.2.0"),
     (pluginCrossBuild / sbtVersion) := {
       scalaBinaryVersion.value match {
         case "2.12" => "1.12.9"
@@ -154,7 +154,7 @@ lazy val themePlugin = project
     crossScalaVersions := Seq("2.12.21", scala3),
     sbtPlugin          := true,
     addSbtPlugin(Library.sbtWeb),
-    addSbtPlugin("com.github.sbt" % "sbt2-compat" % "0.1.0"),
+    addSbtPlugin("com.github.sbt" % "sbt2-compat" % "0.2.0"),
     (pluginCrossBuild / sbtVersion) := {
       scalaBinaryVersion.value match {
         case "2.12" => "1.12.9"
